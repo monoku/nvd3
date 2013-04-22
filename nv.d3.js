@@ -4100,7 +4100,7 @@ nv.models.linePlusBarChart = function() {
         g.select('.nv-legendWrap')
             .datum(data.map(function(series) {
               series.originalKey = series.originalKey === undefined ? series.key : series.originalKey;
-              series.key = series.originalKey + (series.bar ? ' (left axis)' : ' (right axis)');
+              series.key = series.originalKey + (series.bar ? ' (eje izqueirdo)' : ' (eje derecho)');
               return series;
             }))
           .call(legend);
